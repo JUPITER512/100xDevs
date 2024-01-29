@@ -1,3 +1,9 @@
+const fs=require('fs')
+fs.readFile('a1.txt', 'utf-8').then(function(data){
+    console.log("read")
+}).catch(function(err){
+    console.log("error reading")
+})
 // function myOwnTimeOut(fn,duration) {
 //     setTimeout(fn, duration);
 // }

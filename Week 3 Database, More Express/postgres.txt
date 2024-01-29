@@ -1,0 +1,1 @@
+postgresql://syedalimurtaza36:nDNBOJAbh92a@ep-rough-snow-a1h542i9.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
