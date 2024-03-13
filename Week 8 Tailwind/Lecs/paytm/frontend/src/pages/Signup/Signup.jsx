@@ -29,7 +29,7 @@ const Signup = () => {
     <Inputbox stateAtom={passwordState} label={"Password"} placeholder={"******"}/>
     <div className=' pt-4'>
       <Button onClick={()=>{
-        axios.post("http://localhost:3000/api/v1/user/signup",{
+        axios.post("https://paytm-backend-ruddy.vercel.app/api/v1/user/signup",{
           firstname,
           lastname,
           username,

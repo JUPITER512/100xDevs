@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Button from "./Button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { set } from "mongoose";
 function debounce(func, delay) {
     let timeoutId;
 
@@ -23,7 +22,7 @@ function Users() {
 
     async function getUsers(filter) {
         try {
-            const response = await axios.get("http://localhost:3000/api/v1/user/bulk?filter="+filter,{
+            const response = await axios.get("https://paytm-backend-ruddy.vercel.app/api/v1/user/bulk?filter="+filter,{
                 headers: { "Authorization": "Bearer " + localStorage.getItem("token") }
             } );
             return response.data.user;
